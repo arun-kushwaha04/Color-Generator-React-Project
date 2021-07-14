@@ -30,6 +30,7 @@ function App() {
       setList(colors);
     } catch (error) {
       console.log(error);
+      setError(true);
     }
   },[value,color]);
   return (
