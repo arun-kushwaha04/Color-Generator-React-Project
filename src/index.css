@@ -160,7 +160,7 @@ Color Generator
     text-align: center;
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 20%;
     padding-left: 2rem;
 }
 
@@ -272,4 +272,33 @@ input.error {
 
 .copy-div:hover {
     opacity: 1;
+}
+
+from {
+    display: flex;
+}
+
+@media (min-width:769px) {
+    .container {
+        height: 20%;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    from {
+        display: flex;
+    }
+    #value {
+        width: 10vw;
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    from {
+        display: flex;
+        flex-direction: column;
+    }
+    #value {
+        margin: 1rem 0;
+    }
 }
